@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    ;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    border: none;
+    margin-top: 0px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+    border: 1px solid rgb(233, 167, 167);
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(151, 83, 83);
+}
+
+.sidebar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    background-color: rgb(8, 61, 78);
+    color: white;
+    overflow-y: visible;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.sidebar a:hover:not(.active) {
+    color: #f1f1f1;
+    background-color: rgb(67, 134, 87);
+}
+
+.sidebar a.active {
+    background-color: rgb(21, 97, 97);
+    color: white;
+}
+
+.sidebar a {
+    float: left;
+}
+
+.sidebar a {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+}
+
+.body-text {
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 670px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        overflow-y: visible;
+    }
+    .sidebar a {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    .body-text {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    .sidebar a {
+        float: none;
+        width: 100%;
+        width: auto;
+        overflow: visible;
+    }
+}
+
+
+/* style of images */
+
+.img-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image1 {
+    overflow: hidden;
+    border: 1px solid rgb(231, 207, 207);
+    border-radius: 4px;
+    position: relative;
+}
+
+.image1:hover {
+    box-shadow: 0px 0px 10px rgb(204, 159, 159);
+}
+
+img {
+    padding: 1px;
+    margin-left: 16px;
+    image-rendering: auto;
+}
+
+input:valid {
+    border: 1px solid rgb(16, 31, 7);
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+    box-shadow: 0px 0px 10px rgb(44, 53, 47);
+}
+
+input:invalid {
+    border: 1px dashed rgb(192, 82, 82);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(235, 17, 17);
+}
